@@ -11,8 +11,9 @@ int main() {
     printf("enter n: ");
     scanf("%f",&n);
 printf("simple interest: %f",(p*r*t)/100);
-//printf("compound interest: %f",p*(pow(1+(r/n)),n*t);
+printf("compound interest: %f",p*pow(1+(r/100),t)-p);
  
  return 0;
  
+
 }
