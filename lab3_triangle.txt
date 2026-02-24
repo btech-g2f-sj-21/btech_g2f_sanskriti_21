@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c;
+  printf("enter the 3 angles of the triangle:");
+  scanf("%d%d%d",&a,&b,&c);
+  if(a+b+c==180) {
+  printf("\ n that's a valid triangle!");
+  {if (a==b&&b==c)
+  printf("\n equilateral triangle");
+  else if (a==b)
+  printf("\n isosceles trianlge");
+  else printf("\n scalene triangle"); } }
+  else {
+  printf("\n not a valid triangle");}
+  return 0;
+
+}
