@@ -1,0 +1,33 @@
+#include <string.h>
+#include <stdio.h>
+
+int main() {
+   char s[50], t[50];
+   int i, j;
+
+   printf("Enter a string \n");
+   fgets(s, 50, stdin);  
+
+   s[strcspn(s, "\n")] = '\0';  
+
+   i = 0;
+   j = strlen(s) - 1;
+
+   while (j >= 0) {
+      t[i] = s[j];
+      i++;
+      j--;
+   }
+   t[i] = '\0';
+
+   printf("Original: %s", s);
+   printf("\nReversed: %s", t);
+
+   if (strcmp(s, t) == 0) {
+      printf("\nThe given string is palindrome \n");
+   } else {
+      printf("\nThe given string is not palindrome \n");
+   }
+
+   return 0;
+}
