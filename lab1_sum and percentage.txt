@@ -1,19 +1,12 @@
 #include <stdio.h>
-
+//to find sum and percentage
 int main() {
-    float a,b,c,d,e;
-    printf("enter a: ");
-    scanf("%f",&a);
- printf("enter b: ");
-    scanf("%f",&b);
-     printf("enter c: ");
-    scanf("%f",&c);
-     printf("enter d: ");
-    scanf("%f",&d);
-     printf("enter e: ");
-    scanf("%f",&e);
-printf("sum is: %f",a+b+c+d+e);
-printf(" \n percentage is: %f",((a+b+c+d+e)/500)*100);
-
+  float a,b,c,sum,percentage;
+    printf("Enter a,b and c:");
+    scanf("%f %f %f",&a,&b,&c);
+    sum=(a+b+c);
+    percentage=(((a+b+c)/3)*100);
+    printf("sum of the numbers is:%f",sum);
+    printf("\n percentage of the numbers is:%f",percentage);
     return 0;
 }
